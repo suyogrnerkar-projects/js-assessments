@@ -1,0 +1,61 @@
+<html>
+
+<head>
+    <title> Form validation using javascript </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <div class='container'>
+        <h1> Javascript Form Validation </h1>
+        <hr/><br/>
+        <div class="input-group mb-3">
+            Username : <input type="text" class="form-control" placeholder="Username" id="uname" />
+        </div>
+        <div class="input-group mb-3">
+            Password : <input type="password" class="form-control" placeholder="Password" id="pwd" />
+        </div>
+        <div class="input-group mb-3">
+            First Name : <input type="text" class="form-control" placeholder="First name" id="fname" />
+        </div>
+        <div class="input-group mb-3">
+            Last Name : <input type="text" class="form-control" placeholder="Last Name" id="lname" />
+        </div>
+        <div class="input-group mb-3">
+            Email : <input type="email" class="form-control" placeholder="Email" id="email" />
+        </div>
+        <div class="input-group mb-3" id="gender">
+            Gender :
+            <input type="radio" id="male" name="choice" /> Male
+            <input type="radio" id="female" name="choice" /> Female
+        </div>
+        <div class="input-group mb-3">
+            Location : <input type="text" class="form-control" placeholder="Location" id="location" />
+        </div>
+        <br/>
+        <div class="input-group mb-3"><input type="button" class="form-control btn btn-primary" value="Save" id="save" /></div>
+        <br/>
+        <hr/>
+        <h2>Data for the User Stored :</h2>
+        <br/>
+        <table border="1" style="border: 1px solid; border-collapse: collapse;" id="table">
+            <thead>
+                <tr>
+                    <th> Username </th>
+                    <th> Password </th>
+                    <th> First Name </th>
+                    <th> Last Name </th>
+                    <th> Email </th>
+                    <th>Gender</th>
+                    <th>Location</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
