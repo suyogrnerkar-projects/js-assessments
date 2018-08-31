@@ -75,15 +75,7 @@ li a:hover {
     font-style: oblique;
 }
 
-.top-content {
-    padding: 10px;
-    margin-bottom: 15px;
-    border-radius: 5px;
-    width: 650px;
-    float: left;
-    background-color: #ffffff;
-}
-
+.top-content,
 .bottom-content {
     padding: 10px;
     margin-bottom: 15px;
@@ -98,32 +90,10 @@ li a:hover {
     float: right;
 }
 
-.side-content-top {
+.side-content {
     margin-top: 1px;
     margin-bottom: 10px;
     border-radius: 5px;
-    height: 160px;
-    float: right;
-    width: 200px;
-    background-color: #ffffff;
-    padding-bottom: 10px;
-}
-
-.side-content-middle {
-    margin-top: 5px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    height: 160px;
-    float: right;
-    width: 200px;
-    background-color: #ffffff;
-    padding-bottom: 10px;
-}
-
-.side-content-bottom {
-    margin-top: 5px;
-    border-radius: 5px;
-    margin-bottom: 10px;
     height: 160px;
     float: right;
     width: 200px;
@@ -144,8 +114,6 @@ li a:hover {
     line-height:10px;
     color: #ffffff;
 }
-
-
 
 .copyRightBadge {
     color: #e24725;
@@ -236,16 +204,7 @@ li a:hover {
         margin-bottom: 5px;
     }
 
-    .side-content-top {
+    .side-content {
         width: 100%;
     }
-
-    .side-content-middle {
-        width: 100%;
-    }
-
-    .side-content-bottom {
-        width: 100%;
-    }
-
 }
