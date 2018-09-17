@@ -1,0 +1,30 @@
+<html>
+
+<head>
+    <title> Blogs Posts App using jQuery</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row" id="header">
+            <h2>
+                <span class="glyphicon glyphicon-home"></span>
+                <span><strong>BLOG APP :
+                    </strong> Fetch the posts from the API </span>
+                <br /><br />
+                <button class="btn btn-lg btn-primary" id="getPosts" onclick="getPosts()"> Get data </button>
+            </h2>
+        </div>
+        <div class="row">
+            <div id="app"></div>
+        </div>
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
