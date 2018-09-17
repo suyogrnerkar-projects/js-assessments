@@ -163,13 +163,13 @@ function displayPost(i) {
       <tbody>
         <tr><td>Name:</td></tr>
         <br>
-        <tr><td><p><h3>${dataObj.posts[i].id}</h3></p></td></tr>
+        <tr><td><p><h4>${dataObj.users[dataObj.posts[i].userId] ? dataObj.users[dataObj.posts[i].userId].name : "No Name"}</h4></p></td></tr>
         <tr><td>Title:</td></tr>
         <br>
-        <tr><td><p><h3>${dataObj.posts[i].title}</h3></p></td></tr>
+        <tr><td><p><h4>${dataObj.posts[i].title}</h4></p></td></tr>
         <br>
-        <tr><td>Post:</td><br>
-        <tr><td><h3 id="post${i}">${dataObj.posts[i].body}</h3></td><br></tr>
+        <tr><td>Description:</td><br>
+        <tr><td><h5 id="post${i}">${dataObj.posts[i].body}</h5></td><br></tr>
         <tr>
           <td>
             <input type="button"  class="btn btn-info"
@@ -202,9 +202,9 @@ function displayPost(i) {
           <table>
             <tr>
               <td>
-                  <h2> ${dataObj.comments[j].name} </h2>
-                  <h3 name="comment" class ="textInput${j}"
-                  id='textInput${j}'>${dataObj.comments[j].body}</h3>
+                  <h4> ${dataObj.comments[j] ? dataObj.comments[j].name : "No Name"} </h4>
+                  <h5 name="comment" class ="textInput${j}"
+                  id='textInput${j}'>${dataObj.comments[j].body}</h5>
 
                   <input type="button" name="Delete comment"
                   class="btn btn-warning" id="deleteCommentId${j}"
@@ -258,8 +258,8 @@ function addComment(id, postId) {
       <table>
         <tr>
           <td>
-          <h2> Comment ${Date.now()} </h2>
-          <h3 id='comment${id}'> ${commentBox.val()} </h3>
+          <h4> Comment ${Date.now()} </h4>
+          <h5 id='comment${id}'> ${commentBox.val()} </h5>
           <br>
           <input type = 'button' name = 'Delete Comment'
             class= 'btn btn-warning' id = 'del' class= '' value = 'Delete Comment'
